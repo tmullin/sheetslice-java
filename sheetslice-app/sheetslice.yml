@@ -1,0 +1,9 @@
+sheetslice:
+  aws:
+    credentials:
+      rw:
+        accessKeyId: ${dw.sheetslice.aws.credentials.rw.accessKeyId}
+        secretKey: ${dw.sheetslice.aws.credentials.rw.secretKey}
+    s3:
+      bucket: ${dw.sheetslice.aws.s3.bucket:-sheetslice-s3.tmullin.net}
+      prefix: ${dw.sheetslice.aws.s3.prefix:-cache/}

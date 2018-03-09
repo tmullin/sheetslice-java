@@ -1,0 +1,18 @@
+group 'net.tmullin.sheetslice'
+version '0.0.1-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':sheetslice-common')
+    compile 'com.github.librepdf:openpdf:1.0.5'
+    compile group: 'org.apache.pdfbox', name: 'pdfbox', version: '2.0.8'
+    compile group: 'org.apache.pdfbox', name: 'pdfbox-tools', version: '2.0.8'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}

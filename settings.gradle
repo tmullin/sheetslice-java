@@ -1,0 +1,5 @@
+rootProject.name = 'sheetslice-parent'
+include ':sheetslice-pdf'
+include ':sheetslice-common'
+include 'sheetslice-app'
+

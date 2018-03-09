@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Upload</title>
+        <script
+                src="https://code.jquery.com/jquery-1.12.4.min.js"
+                integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+                crossorigin="anonymous"></script>
+        <script src="/static/index.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <form id="upload-form" action="/pdfs" method="POST" target="upload-form-target" enctype="multipart/form-data">
+            <label>Width: <input type="text" name="width" required/></label>
+            <br/>
+            <input type="file" name="file" required/>
+            <br/>
+            <input type="submit" value="Upload"/>
+        </form>
+        <table id="entries"></table>
+        <iframe id="upload-form-target" name="upload-form-target" width="800" height="150"></iframe>
+    </body>
+</html>
