@@ -39,3 +39,8 @@ jar {
         attributes "Main-Class": "net.tmullin.sheetslice.app.SheetSliceApp"
     }
 }
+
+shadowJar {
+    mergeServiceFiles()
+    version = null
+}
